@@ -1,0 +1,41 @@
+//  Con Void(main) abre y cierra llaves comienzas con cualquier proceso
+void main(){
+  
+  // comentario tipos de datos
+  
+ 
+  // tipos de variables puede cambiar su valor como en cualquier lenguaje
+  // Aguas : Aqui si se tome en cuenta cuando esciribes una variable con maysula o minuscula
+  // Numero y numero son variables diferentes
+  
+  String cadenaTexto = "Hola Mundo";
+  int numero = 10;
+  double decimales = 10.20;
+  bool booleano = true;
+
+    //Constantes
+  final double pi = 3.14;
+  print(pi);
+  
+  print (cadenaTexto);
+  print(numero);
+  print(decimales);
+  print (booleano);
+
+  // Operaciones Arimeticas
+   var numero1  = 20;
+   var numero2  = 10; 
+   print(numero1 + numero2);
+
+  // Operadores condicionales
+  // De igualdad ==
+  // De Diferencia !=
+  // Mayoer que >
+  // Menor que <
+  // Mayor o igual =>
+  // Menort o igual <=
+  
+  print(numero1 == numero2);   // retorna false porque no son iguales
+  print(numero1 != numero2);   // retorna True porque no son diferentes
+  
+}
