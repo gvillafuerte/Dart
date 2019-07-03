@@ -1,16 +1,19 @@
 //  Con Void(main) abre y cierra llaves comienzas con cualquier proceso
 void main(){
   
- // tipos de variables puede cambiar su valor como en cualquier lenguaje
- // Aguas : Aqui si se tome en cuenta cuando esciribes una variable con maysula o minuscula
- // Numero y numero son variables diferentes
+  // comentario tipos de datos
+  
+ 
+  // tipos de variables puede cambiar su valor como en cualquier lenguaje
+  // Aguas : Aqui si se tome en cuenta cuando esciribes una variable con maysula o minuscula
+  // Numero y numero son variables diferentes
   
   String cadenaTexto = "Hola Mundo";
   int numero = 10;
   double decimales = 10.20;
   bool booleano = true;
 
-//Constantes
+    //Constantes
   final double pi = 3.14;
   print(pi);
   
@@ -20,8 +23,8 @@ void main(){
   print (booleano);
 
   // Operaciones Arimeticas
-   var numero1  = 20;
-   var numero2  = 10; 
+   var numero1  = 10;
+   var numero2  = 50; 
    print(numero1 + numero2);
 
   // Operadores condicionales
@@ -35,4 +38,70 @@ void main(){
   print(numero1 == numero2);   // retorna false porque no son iguales
   print(numero1 != numero2);   // retorna True porque no son diferentes
   
-}
+  // Flujos de Control o flujo de ejecucion if else swith fo loop do while
+    var ejemplo = false;
+         if(ejemplo == true){
+         print("Es verdadero");
+         } 
+         else{
+           print("es falso la variable");
+            }
+         
+  // Ejemplo de un Switch
+  
+  var color = "Morado";
+    switch(color) {
+      case "Rojo":
+            print("el valor de la variable COLOR es rojo");
+            break;
+      case "Verde":
+           print("el valor de la variable COLOR es Verde");
+            break;
+      default:
+        print("No cumple con ninguna condicion de color");
+        // puedes usar throw ("No cumple con ninguna condicion de color"); Puedes usarlo para depuracion cuando se ejecuta
+        
+       }   // Cierra la llave del Switch
+  
+     // E J E M P L O   P A R A   U T I L I Z A R   F O R   L O O P
+  
+     for(var i = 0; i < 10; i++){
+       print("Iteraccion numero $i");       
+     }
+  
+       // EJEMPLO ITERANDO QUE SOLO SEAN PARES LOS NUMERO QUE ITERA EN EL LOOP
+       for(var i = 0; i < 25; i++){
+        if(i%2 == 0){
+               print("Iteraccion numero $i");       
+          
+        } 
+     }
+  
+  
+  // Ejemplo de itracion usando While (minentras que) 
+  //   while(true){
+  //     print("ejemplo de while");  // Si corres esto nunca va a parar se ciclaria porque siempre seria true      
+ //    }
+  
+  //  Otro ejemplo
+  
+  int num1 = 10;
+  int num2 = 50;
+  
+    while(num2 > num1){
+      print("variable num1 vale $num1");
+      num1++;   // le suma 1 al contador interno del while
+    }
+      print("variable num1 vale $num1 igual que variable num2 que vale $num2");
+  
+  // Ejemplo de Do loop (se usa en caso de que no conocemos cual es el numero de iteraciones y hasta que se cumpla)
+  
+     do{
+       print("se cumplio con la condicion");
+       num1=30;
+     }
+     while (num2 > num1);
+  
+  
+  
+  }  // O J O  L L A V E  D E  Final del Void(main)
