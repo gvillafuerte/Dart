@@ -1,19 +1,16 @@
 //  Con Void(main) abre y cierra llaves comienzas con cualquier proceso
 void main(){
   
-  // comentario tipos de datos
-  
- 
-  // tipos de variables puede cambiar su valor como en cualquier lenguaje
-  // Aguas : Aqui si se tome en cuenta cuando esciribes una variable con maysula o minuscula
-  // Numero y numero son variables diferentes
+ // tipos de variables puede cambiar su valor como en cualquier lenguaje
+ // Aguas : Aqui si se tome en cuenta cuando esciribes una variable con maysula o minuscula
+ // Numero y numero son variables diferentes
   
   String cadenaTexto = "Hola Mundo";
   int numero = 10;
   double decimales = 10.20;
   bool booleano = true;
 
-    //Constantes
+//Constantes
   final double pi = 3.14;
   print(pi);
   
