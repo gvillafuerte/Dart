@@ -1,0 +1,30 @@
+// Funciones simples y con retorno son las que mas se usan comunmente
+
+void main(){
+  saludar("Pepe");   // Nombre de la funcion y dentro del parentesis lleva el parametro a pasar
+  String mensaje = saludar2("Pepe");
+  print(mensaje);
+  
+  print(factorial(10).toString());
+}
+
+//  Funciones simples no retornan nigun valor y hay que escribir void al principio siempre
+    void saludar(String nombre){
+    print("Bienvenido $nombre");
+
+}
+
+// Funciones con retorno lo mismo pero regresamos el valor con un return + variable
+String saludar2(String nombre){
+  String mensaje = "Bienvenido $nombre";
+  return mensaje;
+}
+
+// Funciones recursivas capaces de llamarse a ellas mismas
+num factorial(num n){
+  if(n == 1){
+    return 1;
+    }else{
+    return n*factorial(n-1);
+  }
+}
