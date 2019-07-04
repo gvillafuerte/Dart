@@ -1,0 +1,47 @@
+// Un objeto seria por ejm. un telefono celular
+  // Propiedades serian marca, modelo , color
+    // Metodo sewria : encender, apagar, reiniciar
+
+// las Clases serian : objetos que compraten las mismas porpiedades
+  // Una clase por ejemplo podria ser : Electronica
+   // dentro de una clase podria ser como ejem : un telefono celular
+     /// una televosion, una pc, o una tablet y todas comprten una afinidad a la electronica
+
+
+// Para definir una clase. Cunado definimos el nombre de una clase la primera letra es MAYUSUCLA
+
+class Electronica{
+        // Definimos las propiedades
+  String marca;
+  String modelo;
+  String color;
+  
+  // Definimos los metodos
+  
+  void encender(){   
+    // para ver en consola la ejecucion del metodo encender
+  print("La tablet $marca, $modelo, $color se esta encendiendo");
+  }
+  
+  void apagar(){    
+    // para ver en consola la ejecucion del metodo apagar
+  print("La tablet $marca, $modelo, $color se esta apagando");
+  }
+  
+  void reiniciar(){    
+    // para ver en consola la ejecucion del metodo reiniciar
+  print("La tablet $marca, $modelo, $color se esta reiniciando");
+  }
+
+}  // Cierra la llave de el Class electronica
+
+   // Inicia Void
+  void main(){        
+    var tablet = new Electronica(); // Aqui Definimos el objeto y ya puedo acceder a las porpiedes y metodos
+    tablet.marca = "Samsung";  // aqui acedemos a los metodos que estan dentro de la propiedad Electronica
+    tablet.modelo = "7" ;
+    tablet.color = "Negro";
+    tablet.encender();    // si queremos ejecutar un metodo como (encender, apagar o reiniciar)
+    tablet.apagar();      // Aqui estoy llamnado a los metodos 
+    tablet.reiniciar();   // Aqui estoy llamnado a los metodos 
+  }
