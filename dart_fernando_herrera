@@ -1,0 +1,87 @@
+// Void = vacio
+// $ signo de dollar inyecar un valor
+void main() {
+  // Todo programa en Dart comienza con  :  main()
+
+  print("Hola Mundo General de Todos");
+  String nombre =
+      "Gabriel Villafuerte Mendez"; // Nunca poner var, las variables hay que ponerlas del tipo que necesitamos
+
+  print('Hola $nombre');
+
+  // Numeros
+  int empleados = 10; //  int = tipo de var Entero
+  double pi = 3.1416233;
+  double numero = 1.10;
+
+  print('$empleados - $pi - $numero');
+
+  // Manejo de Numeros y  String Cadenas de Caracteres  String siempre con S mayusucla
+
+  String nombre1 = 'Administración';
+  print(nombre1);
+
+  // Primera posicion del nombre
+  print(nombre[0]); //  Primera posicion del la cadena de caracteres
+  print(nombre[nombre.length -
+      4]); //Manda lallongiutd de la cadena de caracter y la posicion de la letra del texto
+
+  // Tipos de datos Booleanos Verdadero o False.
+
+  bool activado = false;
+  print(activado);
+
+  if (activado == true) {
+    print('El motor esta activado');
+  } else {
+    // El else tambien va encerrado entre llaves
+    print(
+        'Esta apagado'); // "!" signo de necacion, es decir si !activado es true lo pasa a flase
+    // si !activado es false lo pasa true
+  } // ! te cambia el valor por default
+
+  // Lista de coleccion
+
+  List numeros = [1, 2, 3, 4, 5, 6]; // este valor es dinamico
+  print(numeros);
+
+  numeros.add(7); // Adicionas un numero a la coleccion
+  print(numeros);
+
+  List<int> numeros22 = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ]; // Estoy obligando a que la coleccion sea solo de numeros y cambia de valor dinamico a entero
+  print(numeros22);
+
+  // Tamaño fijo
+  //List masNumeros = Listo(10);   // Es un largo fijo de la coleccion y no puedo agrandar mas la lista.
+  //print(masNumeros);
+
+  // T i p o s   d e   D a t o s   M A P   son pares de valores son  m u y   u t l i z a d o s   c u a n d o   t r a b a j a m o s   c o n
+  // s e r v i c i o s   h t t p :
+
+  Map<String, dynamic> persona = {
+    'nombre': 'Carlos Luna',
+    'edad': 33,
+    'soltero': true
+  };
+
+  print(persona['nombre']);
+  print(persona['edad']);
+
+  // Otro Ejemplo
+  Map<int, String> personas = {1: 'Pepe', 2: 'Lalo', 3: 'Juan'};
+
+  personas.addAll(
+      {4: 'vimg641217'}); // Con addAll agreego un 4 elemento a esta lista
+
+  print(personas); // Vista de como se agrega el elemento vimg641217 a la lista
+
+  print(personas[
+      3]); // Obtengo el valor Juan por que estoy apuntado a la llave del mapa y estoy apuntnaod al valor 3
+}
